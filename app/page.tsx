@@ -11,20 +11,20 @@ import BeritaInternasional from "@/components/BeritaInternasional";
 import Hiburan from "@/components/Hiburan";
 import Sidebar from "@/components/Sidebar";
 import Footer from "@/components/Footer";
-import FAB from "@/components/FAB";
+// import FAB from "@/components/FAB";
 // import LocationPermissionSheet from "@/components/LocationPermissionSheet";
 
-import dynamic from "next/dynamic";
+// import dynamic from "next/dynamic";
 
-const LocationPermissionSheet = dynamic(
-  () => import("@/components/LocationPermissionSheet"),
-  { ssr: false }, // ← ini kuncinya, skip SSR entirely
-);
+// const LocationPermissionSheet = dynamic(
+//   () => import("@/components/LocationPermissionSheet"),
+//   { ssr: false }, // ← ini kuncinya, skip SSR entirely
+// );
 
 export default function Home() {
   return (
     <>
-      <LocationPermissionSheet />
+      {/* <LocationPermissionSheet /> */}
       <NewsTicker />
       <Header />
 
